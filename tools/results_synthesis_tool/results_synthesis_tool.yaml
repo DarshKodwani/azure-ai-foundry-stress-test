@@ -1,0 +1,14 @@
+name: results_synthesis_tool
+type: python
+description: Synthesize stress testing results into comprehensive analysis
+entry_point: results_synthesis_tool.py
+inputs:
+  - name: execution_results
+    type: string
+  - name: scenario_classifications
+    type: string
+  - name: regulatory_requirements
+    type: string
+outputs:
+  - name: synthesis_report
+    type: string

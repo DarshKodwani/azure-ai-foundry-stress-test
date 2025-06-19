@@ -1,0 +1,21 @@
+name: report_generation
+description: Generate a professional PDF report from stress testing workflow results
+tool: pdf_report_tool
+inputs:
+  - name: workflow_results
+    type: string
+  - name: report_title
+    type: string
+  - name: report_format
+    type: string
+prompt_template: |
+  Generate a professional PDF report from the following stress testing workflow results:
+  
+  Workflow Results:
+  {{workflow_results}}
+  
+  Report Title: {{report_title}}
+  Report Format: {{report_format}}
+outputs:
+  - name: report_path
+    type: string

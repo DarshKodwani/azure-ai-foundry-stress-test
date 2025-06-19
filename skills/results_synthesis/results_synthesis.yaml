@@ -1,0 +1,24 @@
+name: results_synthesis
+description: Synthesize and interpret stress testing results across all scenarios
+tool: results_synthesis_tool
+inputs:
+  - name: execution_results
+    type: string
+  - name: scenario_classifications
+    type: string
+  - name: regulatory_requirements
+    type: string
+prompt_template: |
+  Synthesize the following stress testing results into a comprehensive analysis:
+  
+  Execution Results:
+  {{execution_results}}
+  
+  Scenario Classifications:
+  {{scenario_classifications}}
+  
+  Regulatory Requirements:
+  {{regulatory_requirements}}
+outputs:
+  - name: synthesis_report
+    type: string

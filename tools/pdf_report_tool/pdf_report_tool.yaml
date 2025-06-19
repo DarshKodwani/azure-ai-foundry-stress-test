@@ -1,0 +1,14 @@
+name: pdf_report_tool
+type: python
+description: Generate professional PDF reports from stress testing results
+entry_point: pdf_report_tool.py
+inputs:
+  - name: workflow_results
+    type: string
+  - name: report_title
+    type: string
+  - name: report_format
+    type: string
+outputs:
+  - name: report_path
+    type: string

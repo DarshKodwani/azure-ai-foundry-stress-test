@@ -1,0 +1,16 @@
+name: model_execution_tool
+type: python
+description: Execute stress testing models and simulations
+entry_point: model_execution_tool.py
+inputs:
+  - name: scenario_specifications
+    type: string
+  - name: portfolio_data
+    type: string
+  - name: model_parameters
+    type: string
+  - name: execution_config
+    type: string
+outputs:
+  - name: execution_results
+    type: string

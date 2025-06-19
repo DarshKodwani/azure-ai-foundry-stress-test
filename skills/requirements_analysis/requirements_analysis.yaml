@@ -1,0 +1,30 @@
+name: requirements_analysis
+description: Analyze user requirements for financial stress testing and generate intelligent scenario recommendations
+tool: requirements_analyst_tool
+inputs:
+  - name: portfolio_type
+    type: string
+  - name: portfolio_value
+    type: number
+  - name: risk_tolerance
+    type: string
+  - name: time_horizon
+    type: number
+  - name: regulatory_framework
+    type: string
+  - name: custom_scenarios
+    type: string
+  - name: output_format
+    type: string
+prompt_template: |
+  Analyze the following financial stress testing requirements and provide intelligent recommendations:
+  Portfolio Type: {{portfolio_type}}
+  Portfolio Value: ${{portfolio_value}}
+  Risk Tolerance: {{risk_tolerance}}
+  Time Horizon: {{time_horizon}} years
+  Regulatory Framework: {{regulatory_framework}}
+  Custom Scenarios: {{custom_scenarios}}
+  Output Format: {{output_format}}
+outputs:
+  - name: analysis_result
+    type: string

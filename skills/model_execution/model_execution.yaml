@@ -1,0 +1,29 @@
+name: model_execution
+description: Execute stress testing models based on classified scenarios and parameters
+tool: model_execution_tool
+inputs:
+  - name: scenario_specifications
+    type: string
+  - name: portfolio_data
+    type: string
+  - name: model_parameters
+    type: string
+  - name: execution_config
+    type: string
+prompt_template: |
+  Execute stress testing models with the following specifications:
+  
+  Scenario Specifications:
+  {{scenario_specifications}}
+  
+  Portfolio Data:
+  {{portfolio_data}}
+  
+  Model Parameters:
+  {{model_parameters}}
+  
+  Execution Configuration:
+  {{execution_config}}
+outputs:
+  - name: execution_results
+    type: string

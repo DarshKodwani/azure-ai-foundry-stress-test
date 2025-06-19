@@ -1,0 +1,24 @@
+name: scenario_classification
+description: Classify and recommend appropriate stress testing scenarios based on requirements analysis
+tool: scenario_classifier_tool
+inputs:
+  - name: requirements_analysis
+    type: string
+  - name: portfolio_characteristics
+    type: string
+  - name: regulatory_requirements
+    type: string
+prompt_template: |
+  Based on the following requirements analysis, classify and recommend appropriate stress testing scenarios:
+  
+  Requirements Analysis:
+  {{requirements_analysis}}
+  
+  Portfolio Characteristics:
+  {{portfolio_characteristics}}
+  
+  Regulatory Requirements:
+  {{regulatory_requirements}}
+outputs:
+  - name: scenario_recommendations
+    type: string

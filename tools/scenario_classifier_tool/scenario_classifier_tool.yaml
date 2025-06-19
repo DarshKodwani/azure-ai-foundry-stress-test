@@ -1,0 +1,14 @@
+name: scenario_classifier_tool
+type: python
+description: Use Azure OpenAI to classify and recommend stress testing scenarios
+entry_point: scenario_classifier_tool.py
+inputs:
+  - name: requirements_analysis
+    type: string
+  - name: portfolio_characteristics
+    type: string
+  - name: regulatory_requirements
+    type: string
+outputs:
+  - name: scenario_recommendations
+    type: string
