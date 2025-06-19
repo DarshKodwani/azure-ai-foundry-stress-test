@@ -6,9 +6,6 @@ This module provides utilities for handling user interactions, including:
 - User confirmation for agent outputs
 - Input validation and error handling
 - Progress display and feedback
-
-Author: AI Assistant
-Date: 2024
 """
 
 import sys
