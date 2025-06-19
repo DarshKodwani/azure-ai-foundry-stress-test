@@ -11,8 +11,11 @@ This package contains all the specialized agents for the financial stress test w
 """
 
 from .requirements_analyst import RequirementsAnalyst, create_requirements_analyst
+from .scenario_classifier import ScenarioClassifier, create_scenario_classifier
 
 __all__ = [
     'RequirementsAnalyst',
-    'create_requirements_analyst'
+    'create_requirements_analyst',
+    'ScenarioClassifier', 
+    'create_scenario_classifier'
 ]
