@@ -1,0 +1,13 @@
+name: summarize_stress_scenario
+description: Summarize a given stress scenario using the summarize_tool
+tool: summarize_tool
+inputs:
+  - name: scenario_text
+    type: string
+prompt_template: |
+  Summarize the following financial stress test scenario:
+  ---
+  {{scenario_text}}
+outputs:
+  - name: summary
+    type: string

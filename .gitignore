@@ -1,0 +1,13 @@
+# Environment variables
+.env
+
+# Generated reports
+reports/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/

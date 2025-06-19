@@ -1,0 +1,7 @@
+name: stress_agent
+description: Agent that summarizes financial stress test scenarios
+skills:
+  - summarize_stress_scenario
+memory:
+  type: none
+entry_skill: summarize_stress_scenario
